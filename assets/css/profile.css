@@ -1,0 +1,232 @@
+/***************************
+                    BODY
+****************************/
+body{
+    width:100%;
+    background-color:var(--black);
+    color:var(--white);
+}
+
+/***************************
+                HEADER
+****************************/
+header{
+    width:100%;
+    height:40vh;
+    background-image:linear-gradient(to bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.6) 50%, rgba(1,1,1,0.3) 100%), url("../../assets/images/profile_header.png");
+    background-size:cover;
+    background-position:bottom;
+    position:relative;
+}
+
+header aside{
+    position:absolute;
+    bottom:1rem;
+    right:1rem;
+}
+
+header aside .icon{
+    background-color:var(--primary);
+    border:1px solid var(--primary);
+    border-radius:50%;
+    padding:0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+
+/***************************
+                   MAIN
+****************************/
+.author_details{
+    width:33%;
+    position:relative;
+    top:-6rem;
+    background:var(--dark);
+    text-align:center;
+    z-index:1;
+    border-radius:10px;
+}
+
+.author_details figure{
+    margin:auto;
+    width:80%;
+    border-radius:50%;
+    position:relative;
+}
+
+.author_details figure img{
+    border-radius:50%;
+}
+
+.author_details figure label{
+    position:absolute;
+    bottom:1rem;
+    right:1rem;
+    z-index:1;
+    padding:0.3rem;
+    border-radius:50%;
+    background-color:var(--primary);
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.author_details figure label iconify-icon{
+    font-size:35px;
+    color:var(--dark);
+}
+
+.author_details figure label:hover{
+    opacity:0.9;
+}
+
+main section:last-child{
+    padding:0 2rem;
+}
+
+main section:last-child .title_header{
+    width:100%;
+    align-items:center;
+    justify-content:space-between;
+}
+
+main section:last-child .title_header a{
+    color:var(--lite);
+}
+
+/*DIVISION_1*/
+.division_1 section:last-child{
+    overflow:hidden;
+}
+
+.friends_suggestion{
+    position:relative;
+    align-items:center;
+    justify-content:center;
+}
+
+.friends_suggestion li{
+    max-width:180px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:10px;
+    overflow:hidden;
+    margin-right:1rem;
+}
+
+.friends_suggestion li figure{
+    max-height:115px;
+    overflow:hidden;
+}
+
+.friends_suggestion li figure img{
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.friends_suggestion li .title{
+    font-weight:400;
+    margin:0;
+}
+
+.friends_suggestion li .btn{
+    display:block;
+    width:100%;
+    border-radius:5px;
+    margin-top:1rem;
+    position:relative;
+}
+
+.friends_suggestion li:hover figure img{
+    transform:scale(1.1);
+}
+
+.slick-slide{
+    width: 190px !important;
+}
+
+.slick-arrow{
+    position:absolute;
+    z-index:1;
+}
+
+.slick-arrow:before{
+    font-family:"FontAwesome";
+    font-size:40px;
+}
+
+.slick-prev{
+    top:50%;
+    left:10px;
+}
+
+.slick-next{
+    top:50%;
+    right:10px;
+}
+
+.slick-prev:before{
+    content:"\f104";
+}
+
+.slick-next:before{
+    content:"\f105";
+}
+
+@media (max-width:920px){
+    .author_details{
+        width:100%;
+        position:relative;
+        top:0rem;
+    }
+    
+    .author_details figure{
+        width:50%;
+    }
+    
+    main section:last-child{
+        padding:1rem 0rem;
+    }
+}
+
+
+/***************************
+                  ADDITIONAL
+****************************/
+/*MODAL*/
+.modal fieldset{
+    position:relative;
+}
+
+.modal textarea{
+    height:200px;
+    resize:none;
+    background-color:var(--white);
+    border-radius:10px;
+    color:var(--dark);
+    font-weight:600;
+    font-family:var(--default_font);
+    border:0;
+    padding:1rem;
+}
+
+.modal .alert{
+    background-color:rgba(1,1,1,0.5);
+    border-radius:2px;
+    color:var(--lite);
+    padding:0.1rem 0.2rem;
+    font-size:10px;
+    position:absolute;
+    bottom:1rem;
+    right:1rem;
+}
+
+.modal .btn{
+    display:block;
+    border-radius:5px;
+}
